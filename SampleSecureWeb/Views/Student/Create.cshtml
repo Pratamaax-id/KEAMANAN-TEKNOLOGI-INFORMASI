@@ -1,0 +1,21 @@
+﻿@model SampleSecureWeb.Models.Student
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Create Student</h4>
+        <hr />
+        <div class="form-group">
+            <label asp-for="Nim"class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nim" class="form control"/>
+            </div>
+            <label asp-for="FullName"class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="FullName" class="form control"/>
+            </div>
+            <div class="col-md-10">
+                <input type="submit" class="btn btn-primary btn-sm" value="Create"/>
+            </div>
+        </div>
+    </div>
+</form>
