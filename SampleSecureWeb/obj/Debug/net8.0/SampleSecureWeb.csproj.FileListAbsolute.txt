@@ -125,3 +125,5 @@ C:\SEMESTER 5\KTI\Keamanan Teknologi Informasi\SampleSecureWeb\bin\Debug\net8.0\
 C:\SEMESTER 5\KTI\Keamanan Teknologi Informasi\SampleSecureWeb\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\SEMESTER 5\KTI\Keamanan Teknologi Informasi\SampleSecureWeb\obj\Debug\net8.0\SampleSecureWeb.csproj.AssemblyReference.cache
 C:\SEMESTER 5\KTI\Keamanan Teknologi Informasi\SampleSecureWeb\obj\Debug\net8.0\SampleSe.24023B6F.Up2Date
+C:\SEMESTER 5\KTI\Keamanan Teknologi Informasi\SampleSecureWeb\obj\Debug\net8.0\SampleSecureWeb.sourcelink.json
+C:\SEMESTER 5\KTI\Keamanan Teknologi Informasi\SampleSecureWeb\bin\Debug\net8.0\BCrypt.Net-Next.dll
