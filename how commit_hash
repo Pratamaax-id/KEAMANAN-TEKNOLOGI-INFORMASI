@@ -1,0 +1,62 @@
+[33mcommit 3def443be8154237bbba883c84f16826fd947a9b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Pratamaax-id <andika121pratama@gmail.com>
+Date:   Sun Oct 6 14:13:24 2024 +0700
+
+    Implementasi Registrasi dan Login
+
+ .../ViewModels/ChangePasswordViewModel.cs          |   6 [32m+++[m[31m---[m
+ .../Debug/net8.0/SampleSecureWeb.AssemblyInfo.cs   |   2 [32m+[m[31m-[m
+ .../SampleSecureWeb.AssemblyInfoInputs.cache       |   2 [32m+[m[31m-[m
+ .../obj/Debug/net8.0/SampleSecureWeb.dll           | Bin [31m131072[m -> [32m131072[m bytes
+ .../obj/Debug/net8.0/SampleSecureWeb.pdb           | Bin [31m58360[m -> [32m58360[m bytes
+ .../Debug/net8.0/SampleSecureWeb.sourcelink.json   |   2 [32m+[m[31m-[m
+ SampleSecureWeb/obj/Debug/net8.0/apphost.exe       | Bin [31m138752[m -> [32m138752[m bytes
+ .../obj/Debug/net8.0/refint/SampleSecureWeb.dll    | Bin [31m32256[m -> [32m32256[m bytes
+ 8 files changed, 6 insertions(+), 6 deletions(-)
+
+[33mcommit 72e208149ba9742552b244a4ed2da8b15477fe6b[m
+Author: Pratamaax-id <andika121pratama@gmail.com>
+Date:   Sun Oct 6 14:05:48 2024 +0700
+
+    Implementasi Registrasi dan Login
+
+ SampleSecureWeb/Controllers/AccountController.cs   | 173 [32m+++++++++++++++++++++[m
+ SampleSecureWeb/Controllers/HomeController.cs      |   2 [32m+[m[31m-[m
+ SampleSecureWeb/Data/ApplicationDbContext.cs       |   1 [32m+[m
+ SampleSecureWeb/Data/IUser.cs                      |  13 [32m++[m
+ SampleSecureWeb/Data/UserData.cs                   |  47 [32m++++++[m
+ .../20241006021948_Tambah_Table_User.Designer.cs   |  56 [32m+++++++[m
+ .../Migrations/20241006021948_Tambah_Table_User.cs |  34 [32m++++[m
+ .../ApplicationDbContextModelSnapshot.cs           |  18 [32m+++[m
+ SampleSecureWeb/Models/User.cs                     |  13 [32m++[m
+ SampleSecureWeb/Program.cs                         |  19 [32m++[m[31m-[m
+ SampleSecureWeb/SampleSecureWeb.csproj             |   1 [32m+[m
+ SampleSecureWeb/SecureWeb.db                       | Bin [31m20480[m -> [32m28672[m bytes
+ .../ViewModels/ChangePasswordViewModel.cs          |  23 [32m+++[m
+ SampleSecureWeb/ViewModels/LoginViewModel.cs       |  17 [32m++[m
+ .../ViewModels/RegistrationViewModel.cs            |  30 [32m++++[m
+ .../Views/Account/ChangePassword.cshtml            |  43 [32m+++++[m
+ SampleSecureWeb/Views/Account/Login.cshtml         |  46 [32m++++++[m
+ SampleSecureWeb/Views/Account/Register.cshtml      |  44 [32m++++++[m
+ .../bin/Debug/net8.0/BCrypt.Net-Next.dll           | Bin [31m0[m -> [32m23040[m bytes
+ .../bin/Debug/net8.0/SampleSecureWeb.deps.json     |  16 [32m++[m
+ .../bin/Debug/net8.0/SampleSecureWeb.dll           | Bin [31m71168[m -> [32m131072[m bytes
+ .../bin/Debug/net8.0/SampleSecureWeb.exe           | Bin [31m138752[m -> [32m138752[m bytes
+ .../bin/Debug/net8.0/SampleSecureWeb.pdb           | Bin [31m43096[m -> [32m58360[m bytes
+ .../Debug/net8.0/SampleSecureWeb.AssemblyInfo.cs   |   2 [32m+[m[31m-[m
+ .../SampleSecureWeb.AssemblyInfoInputs.cache       |   2 [32m+[m[31m-[m
+ ...reWeb.GeneratedMSBuildEditorConfig.editorconfig |  12 [32m++[m
+ .../obj/Debug/net8.0/SampleSecureWeb.assets.cache  | Bin [31m45701[m -> [32m46265[m bytes
+ .../SampleSecureWeb.csproj.AssemblyReference.cache | Bin [31m4549[m -> [32m4986[m bytes
+ .../SampleSecureWeb.csproj.CoreCompileInputs.cache |   2 [32m+[m[31m-[m
+ .../SampleSecureWeb.csproj.FileListAbsolute.txt    |   2 [32m+[m
+ .../obj/Debug/net8.0/SampleSecureWeb.dll           | Bin [31m71168[m -> [32m131072[m bytes
+ .../obj/Debug/net8.0/SampleSecureWeb.pdb           | Bin [31m43096[m -> [32m58360[m bytes
+ .../Debug/net8.0/SampleSecureWeb.sourcelink.json   |   1 [32m+[m
+ SampleSecureWeb/obj/Debug/net8.0/apphost.exe       | Bin [31m138752[m -> [32m138752[m bytes
+ .../obj/Debug/net8.0/ref/SampleSecureWeb.dll       | Bin [31m20992[m -> [32m32256[m bytes
+ .../obj/Debug/net8.0/refint/SampleSecureWeb.dll    | Bin [31m20992[m -> [32m32256[m bytes
+ .../obj/SampleSecureWeb.csproj.nuget.dgspec.json   |   4 [32m+[m
+ SampleSecureWeb/obj/project.assets.json            |  49 [32m++++++[m
+ SampleSecureWeb/obj/project.nuget.cache            |   3 [32m+[m[31m-[m
+ 39 files changed, 666 insertions(+), 7 deletions(-)
